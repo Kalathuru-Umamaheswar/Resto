@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - FoodExpress</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" onclick="window.location='index.html'">FoodExpress</div>
+            <div class="nav-menu">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="index.html#about-page">About</a>
+                <a class="nav-link" href="index.html#contact-page">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page active" style="margin-top: 100px; padding: 2rem;">
+        <h2>Your Cart</h2>
+        <div id="cartPageItems">
+            <!-- Cart items loaded dynamically -->
+        </div>
+        <div class="cart-total">
+            <p>Total: $<span id="cartPageTotal">0.00</span></p>
+            <button class="btn-checkout" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 FoodExpress. All rights reserved.</p>
+    </footer>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>
